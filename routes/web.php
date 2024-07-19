@@ -77,7 +77,11 @@ Route::middleware('can:admin')->group(function(){
 
     Route::get('/admin/authorize',[AdminController::class,'authorizing']);
 
+    Route::post('/admin/authorize',[AdminController::class,'authorizingHandler']);
+
     Route::get('/admin/enroll',[AdminController::class,'enroll']);
+
+    Route::post('/admin/enroll',[AdminController::class,'enrollHandler']);
 
     Route::get('/admin/blogs/{blog:slug}', [AdminBlogController::class,'show']);
 

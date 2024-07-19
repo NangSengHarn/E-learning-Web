@@ -1,5 +1,5 @@
 <x-admin-layout>
-    <x-card-wrapper class="mt-0 pt-0">
+    <x-card-wrapper class="mt-0">
     <x-single-blog :blog="$blog"/>
     @can('admin')
     <div class="text-center my-2">

@@ -44,4 +44,12 @@ class Course extends Model
     public function enrolledUsers(){
         return $this->belongsToMany(User::class);
     }
+
+    //enroll
+    public function unenroll($student_id){
+        $this->enrolledUsers()->detach($student_id);
+    }
+    public function enroll($student_id){
+        $this->enrolledUsers()->attach($student_id);
+    }
 }

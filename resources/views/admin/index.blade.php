@@ -36,7 +36,7 @@
         </table>
     </x-table>
     @else
-    <x-card-wrapper>
+    <x-card-wrapper class="mt-0">
         <div class="text-center"><h3>No Pending Courses</h3></div>
     </x-card-wrapper>
     @endif

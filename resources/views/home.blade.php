@@ -1,10 +1,6 @@
 
 <x-layout>
     
-    @if (session('success'))
-    <div class="alert alert-primary text-center">{{ session('success') }}</div>
-    @endif
-    
     <!-- hero section -->
     <x-hero />
     <!-- course section -->
